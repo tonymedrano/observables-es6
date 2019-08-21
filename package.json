@@ -1,0 +1,24 @@
+{
+  "name": "observables-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonymedrano/observables-es6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonymedrano/observables-es6/issues"
+  },
+  "homepage": "https://github.com/tonymedrano/observables-es6#readme",
+  "dependencies": {
+    "systemjs": "^0.20.18",
+    "systemjs-plugin-traceur": "0.0.3",
+    "traceur": "0.0.111"
+  }
+}
