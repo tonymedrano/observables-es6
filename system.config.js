@@ -53,10 +53,9 @@ Promise.all([
     System.import('rxjs/operators'),
     System.import('rxjs/testing'),
     System.import('rxjs/webSocket'),
-]).then(
-    () => console.log('Successfully tested all entry-points with SystemJS!'),
-    (error) => {
-        console.error('\n\nFailed to load an entry-points via SystemJS: \n\n', error.message);
-        process.exit(-1);
-    }
-);
+]).then(() => {
+    console.log('Successfully tested all entry-points with SystemJS!')
+}, (error) => {
+    console.error('\n\nFailed to load an entry-points via SystemJS: \n\n', error.message);
+    process.exit(-1);
+});
