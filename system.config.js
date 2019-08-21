@@ -1,4 +1,4 @@
-SystemJS.config({
+System.config({
     map: {
         'plugin-traceur': './node_modules/systemjs-plugin-traceur/plugin-traceur.js',
         'traceur': './node_modules/traceur/bin/traceur.js',

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tonymedrano/observables-es6#readme",
   "dependencies": {
+    "rxjs": "^6.5.2",
     "systemjs": "^0.20.18",
     "systemjs-plugin-traceur": "0.0.3",
     "traceur": "0.0.111"
