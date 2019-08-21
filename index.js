@@ -10,9 +10,15 @@
  * Copyright (c) 2019 Agap2
  */
 
-console.log('Running Observables...');
 import Math from './components/math.js';
 
-const math = Math.operation('sum');
+const math = Math.operation();
+const s = math.sum(9,9);
+const r = math.subtract(9,9);
+const m = math.multiply(9,9);
+const d = math.divide(9,9);
+
+
+math.print()
 
 

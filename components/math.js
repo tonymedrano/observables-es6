@@ -10,30 +10,41 @@
  * Copyright (c) 2019 Agap2
  */
 
-import {Rx} from 'rxjs';
-// RxJS v6+
-import { interval } from 'rxjs';
-import { sample } from 'rxjs/operators';
-
-//emit value every 1s
-const source = interval(1000);
-//sample last emitted value from source every 2s
-const example = source.pipe(sample(interval(2000)));
-//output: 2..4..6..8..
-const subscribe = example.subscribe(val => console.log(val));
-
+import {
+    Rx
+} from 'rxjs';
 
 export default class Math {
-    constructor(op) {
-        this.op = op;
-        this.calc(op);
+
+    constructor() {
+        this.operation = []
     }
 
-    static operation(op) {
-        return new Math(op)
+    static operation() {
+        return new Math()
     }
-    calc() {
-        console.log(this.op);
+
+    sum(num1, num2) {
+        this.operation.push(`${num1} + ${num2}: ${num1 + num2}\n`);
+    }
+
+    subtract(num1, num2) {
+        this.operation.push(`${num1} + ${num2}: ${num1 + num2}\n`);
+    }
+
+    multiply(num1, num2) {
+        this.operation.push(`${num1} + ${num2}: ${num1 + num2}\n`);
+    }
+
+    divide(num1, num2) {
+        this.operation.push(`${num1} + ${num2}: ${num1 + num2}\n`);
+    }
+
+    print() {
+        console.log(this.operation);
+        this.operation.forEach(op => {
+            console.log(`\x1b[43m${op}\n`);
+        });
     }
 
 }
